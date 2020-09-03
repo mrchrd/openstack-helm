@@ -1994,7 +1994,7 @@ conf:
     # the name of the panel should be the name of the dir where the panel is installed
     # for example heat_dashboard, cloudkittydashboard or neutron_taas_dashboard
     extra_panels:
-      - heat_dashboard
+      # - heat_dashboard
       - neutron_taas_dashboard
 
 dependencies:
