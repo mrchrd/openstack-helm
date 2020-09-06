@@ -18,7 +18,7 @@ limitations under the License.
 
 set -ex
 
-HOSTNAME=$(hostname -s)
+HOSTNAME=$(hostname -f)
 PORTNAME=octavia-health-manager-port-$HOSTNAME
 
 HM_PORT_ID=$(openstack port show $PORTNAME -c id -f value)
