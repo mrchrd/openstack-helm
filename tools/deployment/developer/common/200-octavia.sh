@@ -16,6 +16,9 @@
 
 set -xe
 
+#NOTE: Get the over-rides to use
+: ${OSH_EXTRA_HELM_ARGS_OCTAVIA:="$(./tools/deployment/common/get-values-overrides.sh octavia)"}
+
 #NOTE: Lint and package chart
 make octavia
 export OS_CLOUD=openstack_helm
