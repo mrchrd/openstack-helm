@@ -1707,6 +1707,8 @@ conf:
       lock_path: /var/lib/nova/tmp
     oslo_middleware:
       enable_proxy_headers_parsing: true
+    cinder:
+      catalog_info: volumev3:cinderv3:internalURL
     glance:
       num_retries: 3
     ironic:
